@@ -38,8 +38,8 @@ const Home: NoPropsFCT = () => {
       <div id="powered-by">
         <div className="content">
           {translate("Powered By")}{" "}
-          <a href="https://galoy.io/" target="_blank" rel="noreferrer">
-            Galoy
+          <a href="https://getflash.io/" target="_blank" rel="noreferrer">
+            Flash
           </a>
         </div>
       </div>
