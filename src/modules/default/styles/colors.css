@@ -1,24 +1,37 @@
+:root {
+  /* Colours */
+  --flash-yellow: #fff200;
+  --flash-green: #41ad49;
+  --flash-red: #d12229;
+  --flash-off-white: #eeeeee;
+  --flash-white: #ffffff;
+  --flash-black: #000000;
+  --flash-placeholder-colour: #929292;
+  --flash-darkmode-border: #151515;
+  --flash-darkmode-txtbg: #030503;
+}
+
 @media (prefers-color-scheme: light) {
   :root {
-    --color-bg: #f9f9f9;
-    --color-light-bg: #fdfdfd;
-    --color-dark-bg: #ededed;
-    --color-menu-bg: #f2f2f2;
-    --color-primary: #111111;
+    --color-bg: var(--flash-white);
+    --color-light-bg: var(--flash-white);
+    --color-dark-bg: var(--flash-off-white);
+    --color-menu-bg: var(--flash-white);
+    --color-primary: var(--flash-black);
     --color-secondary: #666666;
     --color-subtext: #999999;
-    --color-error: #ff2222;
-    --color-links: #2979ff;
+    --color-error: var(--flash-red);
+    --color-links: var(--flash-green);
     --color-highlight-bg: #999999;
     --color-highlight-fg: #eeeeee;
     --color-active-bg: #f8d9aa;
-    --color-borders: #c9c9c9;
-    --color-button-bg: #f9e4b3;
-    --color-button-fg: #000;
+    --color-borders: var(--flash-black);
+    --color-button-bg: var(--flash-black);
+    --color-button-fg: var(--flash-white);
     --color-disabled-button-bg: #ececec;
     --color-disabled-button-fg: #aaa;
-    --color-send: #ed4b85;
-    --color-receive: #28bf89;
+    --color-send: var(--flash-red);
+    --color-receive: var(--flash-green);
     --color-btcPrimary: #8c540a;
     --color-btcSecondary: #f1a43c;
     --color-usdPrimary: #40632c;
@@ -28,25 +41,25 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-bg: #151515;
-    --color-light-bg: #131313;
-    --color-dark-bg: #232323;
-    --color-menu-bg: #1c1c1c;
-    --color-primary: #eeeeee;
+    --color-bg: var(--flash-black);
+    --color-light-bg: var(--flash-black);
+    --color-dark-bg: var(--flash-black);
+    --color-menu-bg: var(--flash-black);
+    --color-primary: var(--flash-white);
     --color-secondary: #999999;
     --color-subtext: #666666;
-    --color-error: #e36969;
-    --color-links: #2979ff;
+    --color-error: var(--flash-red);
+    --color-links: var(--flash-green);
     --color-highlight-bg: #666666;
     --color-highlight-fg: #111111;
     --color-active-bg: #4a453d;
-    --color-borders: #494949;
-    --color-button-bg: #f9e4b3;
-    --color-button-fg: #000;
+    --color-borders: var(--flash-white);
+    --color-button-bg: var(--flash-yellow);
+    --color-button-fg: var(--flash-black);
     --color-disabled-button-bg: #191919;
     --color-disabled-button-fg: #999;
-    --color-send: #ed4b85;
-    --color-receive: #28bf89;
+    --color-send: var(--flash-red);
+    --color-receive: var(--flash-green);
     --color-btcPrimary: #8c540a;
     --color-btcSecondary: #f1a43c;
     --color-usdPrimary: #40632c;
@@ -55,25 +68,25 @@
 }
 
 body.light {
-  --color-bg: #f9f9f9;
-  --color-light-bg: #fdfdfd;
-  --color-dark-bg: #ededed;
-  --color-menu-bg: #f2f2f2;
-  --color-primary: #111111;
+  --color-bg: var(--flash-white);
+  --color-light-bg: var(--flash-white);
+  --color-dark-bg: var(--flash-off-white);
+  --color-menu-bg: var(--flash-white);
+  --color-primary: var(--flash-black);
   --color-secondary: #666666;
   --color-subtext: #999999;
-  --color-error: #ff2222;
-  --color-links: #2979ff;
+  --color-error: var(--flash-red);
+  --color-links: var(--flash-green);
   --color-highlight-bg: #999999;
   --color-highlight-fg: #eeeeee;
   --color-active-bg: #f8d9aa;
-  --color-borders: #c9c9c9;
-  --color-button-bg: #f9e4b3;
-  --color-button-fg: #000;
+  --color-borders: var(--flash-black);
+  --color-button-bg: var(--flash-black);
+  --color-button-fg: var(--flash-white);
   --color-disabled-button-bg: #ececec;
   --color-disabled-button-fg: #aaa;
-  --color-send: #ed4b85;
-  --color-receive: #28bf89;
+  --color-send: var(--flash-red);
+  --color-receive: var(--flash-green);
   --color-btcPrimary: #8c540a;
   --color-btcSecondary: #f1a43c;
   --color-usdPrimary: #40632c;
@@ -81,24 +94,25 @@ body.light {
 }
 
 body.dark {
-  --color-bg: #151515;
-  --color-light-bg: #131313;
-  --color-menu-bg: #1c1c1c;
-  --color-primary: #eeeeee;
+  --color-bg: var(--flash-black);
+  --color-light-bg: var(--flash-black);
+  --color-dark-bg: var(--flash-black);
+  --color-menu-bg: var(--flash-black);
+  --color-primary: var(--flash-white);
   --color-secondary: #999999;
   --color-subtext: #666666;
-  --color-error: #e36969;
-  --color-links: #2979ff;
+  --color-error: var(--flash-red);
+  --color-links: var(--flash-green);
   --color-highlight-bg: #666666;
   --color-highlight-fg: #111111;
   --color-active-bg: #4a453d;
-  --color-borders: #494949;
-  --color-button-bg: #f9e4b3;
-  --color-button-fg: #000;
+  --color-borders: var(--flash-white);
+  --color-button-bg: var(--flash-yellow);
+  --color-button-fg: var(--flash-black);
   --color-disabled-button-bg: #191919;
   --color-disabled-button-fg: #999;
-  --color-send: #ed4b85;
-  --color-receive: #28bf89;
+  --color-send: var(--flash-red);
+  --color-receive: var(--flash-green);
   --color-btcPrimary: #8c540a;
   --color-btcSecondary: #f1a43c;
   --color-usdPrimary: #40632c;
