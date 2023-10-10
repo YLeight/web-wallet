@@ -497,11 +497,11 @@ exports[`Root appRoutes renders Home and matches snapshot 1`] = `
       >
         Powered By 
         <a
-          href="https://galoy.io/"
+          href="https://getflash.io/"
           rel="noreferrer"
           target="_blank"
         >
-          Galoy
+          Flash
         </a>
       </div>
     </div>
